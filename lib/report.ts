@@ -29,9 +29,9 @@ export const stats = [
     detail: "Active, impressions on or after 1 Aug 2026",
   },
   {
-    value: "9 Jun 2025",
-    label: "Second card’s start",
-    detail: "Floor-lamp video still at the top of the library URL",
+    value: "2.04M",
+    label: "EU reach, first card",
+    detail: "Estimated accounts that saw it once. Not impressions.",
   },
   {
     value: "No. 1",
@@ -238,6 +238,7 @@ export type RankedAd = {
   landing: string;
   cta: string;
   note: string;
+  reach?: { accounts: string; region: "EU" | "UK" };
 };
 
 export const rankedAds: RankedAd[] = [
@@ -250,7 +251,8 @@ export const rankedAds: RankedAd[] = [
     copy: "Govee transforms routines into memories. Because every day deserves to shine. Because Life is Colorful.",
     landing: "eu-store.govee.com",
     cta: "Shop Now",
-    note: "Multiple versions. The first version on the card was RGBIC LED strip lights with a protective coating. Another version of the same library ID is a Wi-Fi thermo-hygrometer.",
+    note: "Multiple versions. The grid card showed RGBIC LED strip lights. The EU transparency panel was open on Bluetooth Hygrometer Thermometer H5075, ages 18–65+.",
+    reach: { accounts: "2,039,539", region: "EU" },
   },
   {
     rank: 2,
@@ -294,7 +296,8 @@ export const rankedAds: RankedAd[] = [
     copy: "Same brand stanza as the first card: routines into memories, every day deserves to shine, Life is Colorful.",
     landing: "eu.govee.com · RGBICWW Flow Plus light bars",
     cta: "Shop Now",
-    note: "Multiple versions. Recommended for displays under 45 inches. The line is the brand. The product is a pair of bars.",
+    note: "Multiple versions. The transparency panel was on Flow Plus light bars, model H6056, ages 18–65+. Recommended on the card for displays under 45 inches.",
+    reach: { accounts: "635,580", region: "EU" },
   },
   {
     rank: 6,
@@ -305,7 +308,8 @@ export const rankedAds: RankedAd[] = [
     copy: "Find the best deals at Govee. Make every part of your home feel special.",
     landing: "eu-store.govee.com · Flow Plus light bars",
     cta: "Shop Now",
-    note: "Multiple versions. Same offer sentence as the US strip card, pointed at a different product and store.",
+    note: "Multiple versions. Same offer sentence as the US strip card, on Flow Plus light bars. The panel’s age band was 25–65+.",
+    reach: { accounts: "729,271", region: "EU" },
   },
   {
     rank: 7,
@@ -314,9 +318,9 @@ export const rankedAds: RankedAd[] = [
     started: "25 Aug 2025",
     title: "Pathway lights",
     copy: "Upper and lower lighting, four-section independent control, for safety and ambiance. App or voice. The card calls out Christmas and Halloween in the description.",
-    landing: "us.govee.com · Outdoor Pathway Lights",
+    landing: "us.govee.com · Outdoor Pathway Lights 2",
     cta: "Shop now",
-    note: "Headline on the card: Free shipping and high quality. Running more than a year.",
+    note: "Detail-panel headline: Light the Path to Spooky Nights. The card also says free shipping and high quality. No EU or UK reach figure was on screen. Running more than a year.",
   },
   {
     rank: 8,
@@ -325,9 +329,10 @@ export const rankedAds: RankedAd[] = [
     started: "16 Mar 2026",
     title: "Pay with Klarna",
     copy: "Upgrade your home lighting with Govee. Shop now, pay with Klarna.",
-    landing: "uk.govee.com · Glide Hexa light panels",
+    landing: "uk.govee.com · Glide Hexa on the grid; Wi-Fi thermo-hygrometer in the panel",
     cta: "Shop Now",
-    note: "Multiple versions. The only top card that leads with a financing brand.",
+    note: "Multiple versions. Primary text leads with Klarna. The UK transparency panel was open on a Wi-Fi thermo-hygrometer, ages 18–65+.",
+    reach: { accounts: "233,836", region: "UK" },
   },
   {
     rank: 9,

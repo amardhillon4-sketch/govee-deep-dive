@@ -442,6 +442,30 @@ td.was {
   color: var(--accent);
 }
 
+.reach {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  background: var(--accent-soft);
+  border-radius: 12px;
+  color: #2c2358;
+}
+
+.reach strong {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 520;
+  letter-spacing: -0.03em;
+}
+
+.reach span {
+  font-size: 13px;
+  text-align: right;
+}
+
 .empty {
   padding: 28px;
   border: 1px dashed var(--line);
@@ -508,5 +532,14 @@ footer ul {
   table {
     display: block;
     overflow-x: auto;
+  }
+
+  .reach {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reach span {
+    text-align: left;
   }
 }

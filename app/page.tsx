@@ -78,8 +78,10 @@ export default function Page() {
                 sorted by total impressions, active ads, impressions on or after
                 1 August 2026, returns about 1,000 results. The first nine cards
                 are copied below in the order the page rendered them on{" "}
-                {observedOn}. Meta does not print an impression total on these
-                commercial cards, so the order is the evidence, not a number.
+                {observedOn}. The cards still do not show a global impression
+                total. EU and UK transparency, where it was open, shows
+                estimated reach: accounts in that region that saw the ad at
+                least once. The first card’s EU reach is 2,039,539.
               </p>
               <p>
                 Adspy’s view for advertiser Govee, seen 1 July–30 September
@@ -93,7 +95,7 @@ export default function Page() {
               <h3>What this page will not pretend</h3>
               <ol>
                 <li>No invented like counts from Adspy.</li>
-                <li>No invented impression totals from Meta.</li>
+                <li>Reach is only listed where a transparency panel showed it.</li>
                 <li>June Prime Day prices stay separate from the October encore.</li>
                 <li>Homepage tiles without a length are not treated as the 200 ft kit.</li>
               </ol>
@@ -188,8 +190,10 @@ export default function Page() {
           </div>
           <div className="note">
             Adspy asked for a sign-in before it would show likes. The nine cards
-            are what the Meta URL showed, in that order, with no impression
-            count attached. Store domains are the ones printed on each card.
+            are the Meta URL’s order. Reach is the EU or UK transparency figure
+            where that panel was open: 2,039,539 and 635,580 and 729,271 in the
+            EU, and 233,836 in the UK. Meta’s label on those panels: reach is
+            not impressions. The other five cards had no such figure.
           </div>
           <AdBoard />
         </section>

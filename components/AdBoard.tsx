@@ -46,6 +46,14 @@ export function AdBoard() {
             </p>
             <h3>{ad.title}</h3>
             <p>{ad.copy}</p>
+            {ad.reach ? (
+              <p className="reach">
+                <strong>{ad.reach.accounts}</strong>
+                <span>
+                  {ad.reach.region} reach · accounts that saw it once, not impressions
+                </span>
+              </p>
+            ) : null}
             <p className="caption" style={{ marginTop: 12 }}>
               {ad.landing} · {ad.cta}
             </p>
